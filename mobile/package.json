@@ -1,0 +1,8 @@
+{
+  "name": "wafy-mobile-drive",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "android": "react-native run-android", "start": "react-native start", "build:android": "cd android && ./gradlew assembleRelease", "clean": "cd android && ./gradlew clean" },
+  "dependencies": { "react": "^19.0.0", "react-native": "^0.78.2", "react-native-webview": "^13.13.5" },
+  "devDependencies": { "@react-native/typescript-config": "^0.78.0", "@types/react": "^19.0.8", "typescript": "^5.7.3" }
+}

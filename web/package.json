@@ -1,0 +1,9 @@
+{
+  "name": "drive-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview", "typecheck": "tsc --noEmit", "clean": "rimraf dist" },
+  "dependencies": { "@wafy/core": "^0.1.0", "@wafy/ui": "^0.1.0", "@wafy/design-system": "^0.1.0", "@wafy/utils": "^0.1.0", "@wafy/types": "^0.1.0", "react": "^19.0.0", "react-dom": "^19.0.0", "react-router-dom": "^7.4.0", "react-i18next": "^15.4.1", "i18next": "^24.2.2", "lucide-react": "^0.474.0" },
+  "devDependencies": { "@vitejs/plugin-react": "^4.3.4", "vite": "^6.2.4", "typescript": "^5.7.3", "rimraf": "^6.0.1", "@types/react": "^19.0.8", "@types/react-dom": "^19.0.3", "tailwindcss": "^4.1.3", "@tailwindcss/vite": "^4.1.3" }
+}

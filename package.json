@@ -1,0 +1,14 @@
+{
+  "name": "wafy-drive",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter drive-backend dev\" \"pnpm --filter drive-web dev\"",
+    "build": "pnpm --filter drive-backend build && pnpm --filter drive-web build",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,11 @@
+apply plugin: "com.android.application"
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+react {}
+android {
+    namespace = "life.wafy.drive"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig { applicationId = "life.wafy.drive"; minSdk = rootProject.ext.minSdkVersion; targetSdk = rootProject.ext.targetSdkVersion; versionCode = 1; versionName = "0.1.0" }
+    buildTypes { release { minifyEnabled = true; proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro") } }
+}
+dependencies { implementation("com.facebook.react:react-android"); implementation("com.facebook.react:hermes-android") }
