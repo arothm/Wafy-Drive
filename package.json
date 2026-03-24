@@ -2,10 +2,11 @@
   "name": "wafy-drive",
   "version": "0.1.0",
   "private": true,
+  "workspaces": ["web", "backend", "mobile", "desktop"],
   "scripts": {
-    "dev": "concurrently \"pnpm --filter drive-backend dev\" \"pnpm --filter drive-web dev\"",
-    "build": "pnpm --filter drive-backend build && pnpm --filter drive-web build",
-    "typecheck": "pnpm -r run typecheck"
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w web\"",
+    "build": "npm run build -w backend && npm run build -w web",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w web"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",

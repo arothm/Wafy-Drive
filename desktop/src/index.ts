@@ -2,7 +2,7 @@ export const serviceConfig = {
   id: 'drive',
   name: 'Drive',
   icon: 'HardDrive',
-  path: '/drive/',
+  path: 'https://drive.wafy.life',
   color: '#A855F7',
   description: 'Wafy Drive',
 }

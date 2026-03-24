@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => { fetchUser().finally(() => setLoading(false)) }, [])
 
   if (loading) return <div className="flex items-center justify-center h-screen"><Spinner /></div>
-  if (!user) { window.location.href = '/auth/login'; return null }
+  if (!user) { window.location.href = 'https://wafy.life/login'; return null }
 
   return (
     <>

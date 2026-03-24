@@ -2,7 +2,7 @@ import React, { useRef, useState, useCallback, useEffect } from 'react'
 import { SafeAreaView, StatusBar, StyleSheet, View, Text, TouchableOpacity, BackHandler, ActivityIndicator, useColorScheme, Platform } from 'react-native'
 import { WebView, WebViewNavigation } from 'react-native-webview'
 
-const URL = 'https://wafy.life/drive/'
+const URL = 'https://drive.wafy.life'
 const APP_NAME = 'Wafy Drive'
 const GOLD = '#F5BD02'
 
